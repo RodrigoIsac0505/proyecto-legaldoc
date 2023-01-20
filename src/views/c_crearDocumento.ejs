@@ -1,0 +1,66 @@
+<%- include('partes/header'); %>
+
+<!-- ======= Comienzo del contenido ======= -->
+<div class="">
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Crear documento: Carta cambio de corredor de seguros</h1>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="">Nombre del documento</label>
+            <input type="text" name="nombre_documento" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="">Descripción</label>
+            <textarea name="descripcion" class="form-control" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="">Fecha de creación</label>
+            <input type="date" name="fecha_creacion" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="">Fecha de vencimiento</label>
+            <input type="date" name="fecha_vencimiento" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="">Corredor de seguros</label>
+            <select name="corredor_seguros" class="form-control" required>
+              <option value="">Seleccione un corredor de seguros</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Tipo de documento</label>
+            <select name="tipo_documento" class="form-control" required>
+              <option value="">Seleccione un tipo de documento</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Cliente</label>
+            <select name="cliente" class="form-control" required>
+              <option value="">Seleccione un cliente</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Estado</label>
+            <select name="estado" class="form-control" required>
+              <option value="">Seleccione un estado</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary my-3 botones">Crear documento</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ======= Final del contenido ======= -->
+
+<%- include('partes/footer'); %>

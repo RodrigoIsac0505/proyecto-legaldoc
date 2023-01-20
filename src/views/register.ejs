@@ -1,0 +1,54 @@
+<%- include('partes/header'); %>
+
+<!-- ======= Comienzo del login ======= -->
+<div class="global-container">
+    <div class="card login-form">
+        <div class="card-body">
+            <h3 class="card-title text-center">Registrar</h3>
+            <div class="card-text">
+                <!--
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+                <div id="formulario_registro">
+                    <!-- to error: add class "has-danger" -->
+					<!-- nombre y apellido -->
+					<div class="form-group">
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control" id="nombre" placeholder="Juan" required>
+					</div>
+					<div class="form-group">
+						<label for="apellido">Apellido</label>
+						<input type="text" class="form-control" id="apellido" placeholder="Perez" required>
+					</div>
+					<!-- cumpleaños -->
+					<div class="form-group">
+						<label for="cumpleanos">Cumpleaños</label>
+						<input type="date" class="form-control" id="cumpleanos" placeholder="dd/mm/aaaa" required>
+					</div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Correo</label>
+                        <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                               aria-describedby="emailHelp" placeholder="juan.perez@utp.ac.pa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Repetir Contraseña</label>
+                        <input type="password" class="form-control form-control-sm" id="exampleInputPassword2" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block botones" onclick="registrarUsuario()">Registrar</button>
+
+                    <div class="sign-up">
+                        ¿Ya tienes una cuenta? <a href="/login">Iniciar sesion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ======= Final del login ======= -->
+
+<%- include('partes/footer'); %>

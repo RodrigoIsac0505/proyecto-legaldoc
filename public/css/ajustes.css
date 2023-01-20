@@ -1,0 +1,9 @@
+.botones{
+	background-color: #000080;
+   border-color: white;
+}
+
+.botones:hover{
+	background-color: #000080;
+   border-color: black;
+}

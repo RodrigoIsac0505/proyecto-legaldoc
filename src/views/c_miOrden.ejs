@@ -1,0 +1,40 @@
+<%- include('partes/header'); %>
+
+  <div class="">
+    <div class="container my-5">
+      <div class="row my-5">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Mi orden</h3>
+            </div>
+            <div class="card-body" id="data">
+              <h3>Servicio: Lorem Ipsum</h3><br>
+                  <h4>Información del servicio: </h2>
+                    <p>
+                    <h4 style="text-align:justify">
+                  </h4><br>
+                  </p>
+                  <h3>Estado: Lorem Ipsum</h3><br>
+            </div>
+            </p>
+            <div style=" display: flex; align-items: center; justify-content: center;">
+              <a href="/c_misOrdenes">
+                <button type="button" class="btn btn-primary botones">Regresar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <%- include('partes/footer'); %>
+<script>
+  $(document).ready(function(){
+    showMyOrdersDetail();
+  })
+</script>
